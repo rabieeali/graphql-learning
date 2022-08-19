@@ -115,7 +115,7 @@ const UserList = [
         id: 1,
         name: "John",
         username: "john",
-        age: 20,
+        age: 27,
         nationality: "CANADA",
         friends: [
             {
@@ -176,25 +176,25 @@ const UserList = [
 const MovieList = [
     {
         id: 1,
-        name: "Avengers Endgame",
+        name: "avengers",
         yearOfPublication: 2019,
         isInTheaters: true,
     },
     {
         id: 2,
-        name: "Interstellar",
+        name: "interstellar",
         yearOfPublication: 2007,
         isInTheaters: true,
     },
     {
         id: 3,
-        name: "Superbad",
+        name: "superbad",
         yearOfPublication: 2009,
         isInTheaters: true,
     },
     {
         id: 4,
-        name: "PedroTech The Movie",
+        name: "pedrotech",
         yearOfPublication: 2035,
         isInTheaters: false,
     },

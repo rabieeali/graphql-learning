@@ -1,14 +1,19 @@
-import {ApolloClient , InMemoryCache, ApolloProvider} from "@apollo/client";
+import {ApolloClient, InMemoryCache, ApolloProvider} from "@apollo/client";
+import DisplayData from "./components/DisplayData";
 
 const App = () => {
     const client = new ApolloClient({
-        cache: _ ,
-        uri: "http://localhost:3001/grapghql" ,
-    })
+        cache: new InMemoryCache(),
+        uri: "http://localhost:4000/",
+    });
+
+
     return (
-        <div>
-            <h1>Hello React</h1>
-        </div>
+        <ApolloProvider client={client}>
+            <div>
+                <DisplayData/>
+            </div>
+        </ApolloProvider>
     );
 };
 
